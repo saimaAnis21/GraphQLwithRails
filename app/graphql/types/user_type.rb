@@ -13,5 +13,6 @@ module Types
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :full_name, String
     field :full_address, String
+    field :posts, [Types::PostType]
   end
 end

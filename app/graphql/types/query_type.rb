@@ -18,6 +18,16 @@ module Types
     def users
       User.all      
     end  
+
+    field :posts, [PostType], null: false, description: 'List all posts'
+    def posts
+      Post.all      
+    end
+   
+    field :comments, [CommentType], null: false, description: 'List all comments'
+    def comments
+      Comment.all      
+    end
    
 
   end
